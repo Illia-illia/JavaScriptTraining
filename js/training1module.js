@@ -386,15 +386,14 @@
 // console.log(result);
 
 // task 36
-function checkForSpam(message) {
-  let result;
-  // Change code below this line
-  result = message.toLowerCase().includes('spam').includes('sale')
-    ? true
-    : false;
-
-  // Change code above this line
-  return result;
-}
-let result = checkForSpam('Latest technology news');
-console.log(result);
+// function checkForSpam(message) {
+//   let result;
+//   // Change code below this line
+//   result =
+//     message.toLowerCase().includes('spam') ||
+//     message.toLowerCase().includes('sale');
+//   // Change code above this line
+//   return result;
+// }
+// let result1 = checkForSpam('Get rid of sPaM emails. Our book in on sale!');
+// console.log(result1);
