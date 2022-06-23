@@ -194,3 +194,195 @@
 // }
 
 // console.log(calculateTotal(24));
+
+// task19
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+// for (let i = 0; i < fruits.length; i += 1) {
+//   // Change this line
+//   const fruit = fruits[i]; // Change this line
+//   console.log(fruit);
+// }
+
+// task 20
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+//   for (let i = 0; i < order.length; i += 1) {
+//     total += order[i];
+//   }
+//   // Change code above this line
+//   return total;
+// }
+
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+
+// task 21
+// function findLongestWord(string) {
+//   // Change code below this line
+//   string = string.split(' ');
+//   let longestWord = string[0];
+//   for (let i = 0; i < string.length; i += 1) {
+//     if (longestWord.length < string[i].length) {
+//       longestWord = string[i];
+//     }
+//   }
+//   return longestWord;
+//   // Change code above this line
+// }
+// console.log(findLongestWord('Google do a roll'));
+
+// task22
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   // Change code below this line
+//   for (let i = min; i <= max; i += 1) {
+//     numbers.push(i);
+//   }
+//   // Change code above this line
+//   return numbers;
+// }
+
+// console.log(createArrayOfNumbers());
+
+// task23
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const arr = [];
+//   for (let i = 0; i <= numbers.length; i += 1) {
+//     if (numbers[i] > value) {
+//       arr.push(numbers[i]);
+//     }
+//   }
+//   return arr;
+//   // Change code above this line
+// }
+// console.log(filterArray([12, 24, 8, 41, 76], 38));
+
+// task24
+// function checkFruit(fruit) {
+//   const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+//   return fruits.includes(fruit); // Change this line
+// }
+// console.log(checkFruit('plum'));
+
+// task 25
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+//   let a = [];
+//   for (let i = 0; i < array1.length; i += 1) {
+//     if (array2.includes(array1[i])) {
+//       a.push(array1[i]);
+//     }
+//   }
+
+//   return a;
+//   // Change code above this line
+// }
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+// console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+// console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+// console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+// console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
+
+// task 26
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+//   for (const a of order) {
+//     total += a;
+//   }
+
+//   // Change code above this line
+//   return total;
+// }
+// console.log(calculateTotalPrice([12, 85, 37, 4]));
+
+// task 27
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const filteredNumbers = [];
+
+//   for (const number of numbers) {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   }
+
+//   return filteredNumbers;
+//   // Change code above this line
+// }
+
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+
+// task 28
+// Change code below this line
+// const a = 3 % 3;
+// const b = 4 % 3;
+// const c = 11 % 4;
+// const d = 12 % 7;
+// const e = 8 % 3;
+// console.log(a, b, c, d, e);
+
+// task 29
+// function getEvenNumbers(start, end) {
+//   // Change code below this line
+//   let a = [];
+//   for (let i = start; i <= end; i += 1) {
+//     if (i % 2 === 0) {
+//       a.push(i);
+//     }
+//   }
+//   return a;
+//   // Change code above this line
+// }
+
+// console.log(getEvenNumbers(3, 11));
+
+//  task 30
+// const start = 6;
+// const end = 27;
+// let number;
+
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+//   }
+// }
+// console.log(number);
+
+// task 31
+// function findNumber(start, end, divisor) {
+//   // Change code below this line
+
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       return i;
+//     }
+//   }
+//   // Change code above this line
+// }
+// console.log(findNumber(2, 6, 5));
+// console.log(findNumber(8, 17, 3));
+
+// task 32
+// function includes(array, value) {
+//   // Change code below this line
+//   for (let i = 0; i < array.length; i += 1) {
+//     if (array[i] === value) {
+//       return true;
+//     }
+//   }
+//   return false;
+//   // Change code above this line
+// }
+// console.log(includes([1, 2, 3, 4, 5], 3));
+// console.log(
+//   includes(['Earth', 'Mars', 'Venus', 'Jupiter', 'Saturn'], 'Jupiter')
+// );
+// console.log(
+//   includes(['Earth', 'Mars', 'Venus', 'Jupiter', 'Saturn'], 'Uranus')
+// );
+// console.log(includes(['apple', 'plum', 'pear', 'orange'], 'kiwi'));
