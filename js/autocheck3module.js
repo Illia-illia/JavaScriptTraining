@@ -307,15 +307,268 @@
 // console.log(getProductPrice('Scanner')); // повертає 2700)
 
 // task 19
-const products = [
-  { name: 'Radar', price: 1300, quantity: 4 },
-  { name: 'Scanner', price: 2700, quantity: 3 },
-  { name: 'Droid', price: 400, quantity: 7 },
-  { name: 'Grip', price: 1200, quantity: 9 },
-];
+// const products = [
+//   { name: 'Radar', price: 1300, quantity: 4 },
+//   { name: 'Scanner', price: 2700, quantity: 3 },
+//   { name: 'Droid', price: 400, quantity: 7 },
+//   { name: 'Grip', price: 1200, quantity: 9 },
+// ];
 
 // function getAllPropValues(propName) {
 //   // Change code below this line
+//   const names = [];
+//   const prices = [];
+//   const quantities = [];
+//   let values = [];
+//   for (const product of products) {
+//     const { name, price, quantity } = product;
+//     names.push(name);
+//     prices.push(price);
+//     quantities.push(quantity);
+//   }
+//   if (propName === 'name') {
+//     values = names;
+//   }
+//   if (propName === 'price') {
+//     values = prices;
+//   }
+//   if (propName === 'quantity') {
+//     values = quantities;
+//   }
+//   return values;
 //   // Change code above this line
 // }
 // console.log(getAllPropValues('name'));
+
+// task 20
+// const products = [
+//   { name: 'Radar', price: 1300, quantity: 4 },
+//   { name: 'Scanner', price: 2700, quantity: 3 },
+//   { name: 'Droid', price: 400, quantity: 7 },
+//   { name: 'Grip', price: 1200, quantity: 9 },
+// ];
+
+// function calculateTotalPrice(productName) {
+//   // Change code below this line
+//   let total = 0;
+//   for (const product of products) {
+//     if (product.name === productName) {
+//       total = product.price * product.quantity;
+//     }
+//   }
+//   return total;
+//   // Change code above this line
+// }
+// console.log(calculateTotalPrice('Grip'));
+
+// task 21
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Change code below this line
+// const { yesterday, today, tomorrow } = highTemperatures;
+
+// // Change code above this line
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
+
+// task 22
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Change code below this line
+// const {
+//   yesterday,
+//   today,
+//   tomorrow,
+//   icon = 'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg',
+// } = highTemperatures;
+
+// // Change code above this line
+// const meanTemperature = (yesterday + today + tomorrow) / 3;
+
+// task 23
+// const highTemperatures = {
+//   yesterday: 28,
+//   today: 26,
+//   tomorrow: 33,
+// };
+// // Change code below this line
+// const {
+//   yesterday: highYesterday,
+//   today: highToday,
+//   tomorrow: highTomorrow,
+//   icon: highIcon = 'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg',
+// } = highTemperatures;
+
+// // Change code above this line
+// const meanTemperature = (highYesterday + highToday + highTomorrow) / 3;
+
+// task 24
+// const colors = [
+//   { hex: '#f44336', rgb: '244,67,54' },
+//   { hex: '#2196f3', rgb: '33,150,243' },
+//   { hex: '#4caf50', rgb: '76,175,80' },
+//   { hex: '#ffeb3b', rgb: '255,235,59' },
+// ];
+
+// const hexColors = [];
+// const rgbColors = [];
+// // Change code below this line
+
+// for (const { hex, rgb } of colors) {
+//   hexColors.push(hex);
+//   rgbColors.push(rgb);
+// }
+// console.log(hexColors);
+// console.log(rgbColors);
+
+// task 25
+// const forecast = {
+//   today: {
+//     low: 28,
+//     high: 32,
+//     icon: 'https://www.flaticon.com/svg/static/icons/svg/861/861059.svg',
+//   },
+//   tomorrow: {
+//     low: 27,
+//     high: 31,
+//   },
+// };
+// // Change code below this line
+// const {
+//   today: {
+//     high: highToday,
+//     low: lowToday,
+//     icon: todayIcon = 'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg',
+//   },
+//   tomorrow: {
+//     low: lowTomorrow,
+//     high: highTomorrow,
+//     icon: tomorrowIcon = 'https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg',
+//   },
+// } = forecast;
+
+// task 26
+// Change code below this line
+// function calculateMeanTemperature(forecast) {
+//   const {
+//     today: { low: todayLow, high: todayHigh },
+//     tomorrow: { low: tomorrowLow, high: tomorrowHigh },
+//   } = forecast;
+
+//   // Change code above this line
+//   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
+// }
+
+// console.log(
+//   calculateMeanTemperature({
+//     today: { low: 28, high: 32 },
+//     tomorrow: { low: 25, high: 29 },
+//   })
+// );
+
+// task 27
+// const scores = [89, 64, 42, 17, 93, 51, 26];
+// // Change code below this line
+// const bestScore = Math.max(...scores);
+// const worstScore = Math.min(...scores);
+// console.log(worstScore);
+
+// task 28
+// const firstGroupScores = [64, 42, 93];
+// const secondGroupScores = [89, 14, 51, 26];
+// const thirdGroupScores = [29, 47, 18, 97, 81];
+// // Change code below this line
+// const allScores = [
+//   ...firstGroupScores,
+//   ...secondGroupScores,
+//   ...thirdGroupScores,
+// ];
+// const bestScore = Math.max(...allScores);
+// const worstScore = Math.min(...allScores);
+
+// task 29
+// const defaultSettings = {
+//   theme: 'light',
+//   public: true,
+//   withPassword: false,
+//   minNumberOfQuestions: 10,
+//   timePerQuestion: 60,
+// };
+// const overrideSettings = {
+//   public: false,
+//   withPassword: true,
+//   timePerQuestion: 30,
+// };
+// // Change code below this line
+// const finalSettings = { ...defaultSettings, ...overrideSettings };
+
+// task 30
+// function makeTask(data) {
+//   const completed = false;
+//   const category = 'General';
+//   const priority = 'Normal';
+//   // Change code below this line
+//   const result = { completed, category, priority, ...data };
+//   return result;
+//   // Change code above this line
+// }
+// console.log(makeTask({ category: 'Finance', text: 'Take interest' }));
+
+// task 31
+// Change code below this line
+// function add(...args) {
+//   let total = 0;
+//   for (const item of args) {
+//     total += item;
+//   }
+//   return total;
+//   // Change code above this line
+// }
+// console.log(add(12, 4, 11, 48));
+
+// task 32
+// Change code below this line
+// function addOverNum(a, ...args) {
+//   let total = 0;
+//   for (const arg of args) {
+//     if (a < arg) {
+//       total += arg;
+//     }
+//   }
+
+//   return total;
+//   // Change code above this line
+// }
+// console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
+
+// task 33
+// Change code below this line
+// function findMatches(array1, ...args) {
+//   const matches = []; // Don't change this line
+//   for (let i = 0; i < array1.length; i += 1) {
+//     if (args.includes(array1[i])) {
+//       matches.push(array1[i]);
+//     }
+//   }
+//   // Change code above this line
+//   return matches;
+// }
+// console.log(findMatches([10, 24, 41, 6, 9, 19], 24, 11, 9, 23, 41));
+
+// task 34
+const bookShelf = {
+  // Change code below this line
+  books: ['The last kingdom', 'The guardian of dreams'],
+  getBooks() {
+    return 'Returning all books';
+  },
+  addBook(bookName) {
+    return `Adding book ${bookName}`;
+  },
+  // Change code above this line
+};
