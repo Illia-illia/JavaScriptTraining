@@ -314,7 +314,8 @@ const products = [
   { name: 'Grip', price: 1200, quantity: 9 },
 ];
 
-function getAllPropValues(propName) {
-  // Change code below this line
-  // Change code above this line
-}
+// function getAllPropValues(propName) {
+//   // Change code below this line
+//   // Change code above this line
+// }
+// console.log(getAllPropValues('name'));
