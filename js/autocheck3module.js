@@ -644,44 +644,79 @@
 // };
 
 // task 41
-const atTheOldToad = {
-  potions: [
-    { name: 'Speed potion', price: 460 },
-    { name: 'Dragon breath', price: 780 },
-    { name: 'Stone skin', price: 520 },
-  ],
-  // Change code below this line
-  getPotions() {
-    const { potions } = this;
-    return potions;
-  },
-  addPotion(newPotion) {
-    const { potions } = this;
-    for (const potion of potions) {
-      const { name } = potion;
-      const { name: newName } = newPotion;
-      if (name === newName) {
-        return `Error! Potion ${newName} is already in your inventory!`;
-      }
-    }
+// const atTheOldToad = {
+//   potions: [
+//     { name: 'Speed potion', price: 460 },
+//     { name: 'Dragon breath', price: 780 },
+//     { name: 'Stone skin', price: 520 },
+//   ],
+//   // Change code below this line
+//   getPotions() {
+//     const { potions } = this;
+//     return potions;
+//   },
+//   addPotion(newPotion) {
+//     const { potions } = this;
+//     for (const potion of potions) {
+//       const { name } = potion;
+//       const { name: newName } = newPotion;
+//       if (name === newName) {
+//         return `Error! Potion ${newName} is already in your inventory!`;
+//       }
+//     }
 
-    potions.push(newPotion);
-  },
-  removePotion(potionName) {
-    const { potions } = this;
-    for (let i = 0; i < potions.length; i += 1) {
-      if (potions[i].name === potionName) {
-        potions.splice(i, 1);
-      }
-    }
-  },
-  updatePotionName(oldName, newName) {
-    const { potions } = this;
-    for (let i = 0; i < potions.length; i += 1) {
-      if (potions[i].name === oldName) {
-        potions[i].name = newName;
-      }
-    }
-  },
-  // Change code above this line
-};
+//     potions.push(newPotion);
+//   },
+//   removePotion(potionName) {
+//     const { potions } = this;
+//     for (let i = 0; i < potions.length; i += 1) {
+//       if (potions[i].name === potionName) {
+//         potions.splice(i, 1);
+//       }
+//     }
+//   },
+//   updatePotionName(oldName, newName) {
+//     const { potions } = this;
+//     for (let i = 0; i < potions.length; i += 1) {
+//       if (potions[i].name === oldName) {
+//         potions[i].name = newName;
+//       }
+//     }
+//   },
+//   // Change code above this line
+// };
+
+// tests
+
+// Виклик методу atTheOldToad.getPotions()
+//  для вихідного об'єкта повертає
+//  [{ name: "Speed potion", price: 460 },
+//    { name: "Dragon breath", price: 780 },
+//    { name: "Stone skin", price: 520 }]
+
+// Для вихідного об'єкта після виклику методу
+// atTheOldToad.addPotion({ name: "Invisibility", price: 620 }),
+//   в масиві potions останнім елементом буде цей об'єкт
+
+// Якщо зілля, що додається, вже є в масиві potions,
+//   метод addPotion повертає рядок з текстом з вихідного коду
+// Якщо зілля, що додається, вже є в масиві potions,
+//   метод addPotion не додає в нього переданий об'єкт
+
+// Для вихідного об'єкта після виклику
+// atTheOldToad.addPotion({ name: "Dragon breath", price: 700 }),
+//  масив potions не змінюється
+
+// Для вихідного об'єкта виклик atTheOldToad.addPotion
+//   ({ name: "Dragon breath", price: 700 })
+//, повертає рядок "Error! Potion Dragon breath is already in your inventory!"
+
+// Для вихідного об'єкта після виклику методу
+// atTheOldToad.removePotion("Dragon breath")
+//   , у властивості potions буде масив[{ name: "Speed potion", price: 460 },
+//     { name: "Stone skin", price: 520 }]
+
+// Для вихідного об'єкта після виклику методу
+// atTheOldToad.updatePotionName("Dragon breath", "Polymorth")
+//   , у властивості potions буде масив[{ name: "Speed potion", price: 460 },
+//   { name: "Polymorth", price: 780 }, { name: "Stone skin", price: 520 }]
