@@ -720,5 +720,3 @@
 // atTheOldToad.updatePotionName("Dragon breath", "Polymorth")
 //   , у властивості potions буде масив[{ name: "Speed potion", price: 460 },
 //   { name: "Polymorth", price: 780 }, { name: "Stone skin", price: 520 }]
-
-
