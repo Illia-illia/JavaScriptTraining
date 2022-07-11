@@ -140,3 +140,18 @@
 // const numbers = [1, 2, 3, 4, 5];
 // const filteredNumbers = numbers.filter((value) => value > 3);
 // console.log(filteredNumbers); // [4, 5]
+
+// MODULE 5 EXAMPlE
+const user = {
+  tag: 'mango',
+  showTag() {
+    console.log('showTag->this', this);
+    console.log('showTag->this.tag', this.tag);
+  },
+};
+
+const invokAction = function (action) {
+  console.log(action);
+  action();
+};
+invokAction(user.showTag);
